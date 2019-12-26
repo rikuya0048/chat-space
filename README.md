@@ -4,8 +4,8 @@
 |------|----|-------|
 |body|text||
 |image|string||
-|group|t.references|null: false, foreign_key: true|
-|user|t.references|null: false, foreign_key: true|
+|group|references|null: false, foreign_key: true|
+|user|references|null: false, foreign_key: true|
 ### Association
 - belongs_to :group
 - belongs_to :user
@@ -34,8 +34,8 @@
 ## groups_usersテーブル
 |Column|Type|Options|
 |------|----|-------|
-|user|t.references|null: false, foreign_key: true|
-|group|t.references|null: false, foreign_key: true|
+|user|references|null: false, foreign_key: true|
+|group|references|null: false, foreign_key: true|
 
 ### Association
 - belongs_to :group
