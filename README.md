@@ -15,7 +15,7 @@
 |Column|Type|Options|
 |------|----|-------|
 |email|string|null: false, add_index: true|
-|nickname|string|null: false, unipue: true|
+|nickname|string|null: false, unique: true|
 ### Association
 - has_many :groups_users
 - has_many :groups, through: groups_users
@@ -26,9 +26,9 @@
 |------|----|-------|
 |group_name|text|null: false, unique:true|
 ### Association
-has_many :groups_users
-has_many :users, through: groups_users
-has_many :messages
+- has_many :groups_users
+- has_many :users, through: groups_users
+- has_many :messages
 
 
 ## groups_usersテーブル
