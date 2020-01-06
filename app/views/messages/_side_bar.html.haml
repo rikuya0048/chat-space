@@ -1,0 +1,23 @@
+.chat-side
+  .side-bar
+    .side-bar__box
+      %p.side-bar__box__username
+        大柴
+      %ul.side-bar__box__menu
+        %li.side-bar__box__edit-user
+          = link_to "#" do
+            = icon('fas', 'edit') 
+        %li.side-bar__box__new-group
+          = link_to "#" do
+            = icon('fas', 'cog') 
+  .groups
+   
+    .group
+      .group__group-name
+        %p グループ1
+      .group__latest-message
+        %p まだメッセージがありません
+      .group__group-name
+        %p グループ2
+      .group__latest-message
+        %p まだメッセージがありません
