@@ -1,0 +1,39 @@
+.chat-main
+  .chat-main__group-info
+    .chat-main__left-box
+      グループ
+      .chat-main__member
+        Member:suzuki
+    = link_to "#", class: "edit-btn" do
+      Edit
+
+
+
+  .chat-main__message-list
+    .chat-main__message-user
+      rikuya0048
+      .chat-main__message-date
+        2020/01/01(Fri) 12:00:00
+    .chat-main__comment
+      おはよう
+    .chat-main__message-user
+      rikuya0048
+      .chat-main__message-date
+        2020/01/01(Fri) 12:00:00
+    .chat-main__comment
+      おはよう
+    .chat-main__message-user
+      rikuya0048
+      .chat-main__message-date
+        2020/01/01(Fri) 12:00:00
+    .chat-main__comment
+      おはよう
+
+  .form
+    %form.new_message
+      .input-box
+        %input{type: "text", class: "input-box__text", placeholder: "type a message"}
+        %label{class: "input-box__image"}
+          = icon('fas', 'image')
+          %input{type: "file", class: "input-box__image__file"}
+      %input{type: "submit", value: "Send", class: "submit-btn"}
