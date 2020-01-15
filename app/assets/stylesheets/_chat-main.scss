@@ -4,12 +4,13 @@
   height: 100vh;
   
   
-  &__group-info {
+  .main-header {
   height: 100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 40px;
+  overflow: scroll;
 
     .chat-main__left-box {
       margin-top: 35px;
@@ -33,26 +34,30 @@
     }
   }
 
-  .chat-main__message-list {
-  height: calc(100vh - 100px - 90px);
+  .messages {
+  height: calc(100vh - 190px);
   background-color: #fafafa;
   padding-left: 40px;
   padding-top: 45px;
+  overflow: scroll;
 
-    .chat-main__message-user {
-      font-size: 16px;
-      color: #333333;
-      padding-bottom: 12px;
-      display: flex;
-      font-weight: bold;
+    .chat-main__group-info {
+    
+      .chat-main__member {
+        font-size: 16px;
+        color: #333333;
+        padding-bottom: 12px;
+        display: flex;
+        font-weight: bold;
 
-      .chat-main__message-date {
+      .upper-message__date {
         color: #999999;
         font-size: 12px;
         margin-left: 10px;
       }
+      }
     }
-    .chat-main__comment {
+    .chat-main__message-list {
       font-size:14px;
       color: #434A54;
       padding-bottom: 46px;

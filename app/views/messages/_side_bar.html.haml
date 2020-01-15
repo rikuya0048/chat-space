@@ -11,13 +11,11 @@
           = link_to "#" do
             = icon('fas', 'cog') 
   .groups
-   
-    .group
-      .group__group-name
-        %p グループ1
-      .group__latest-message
-        %p まだメッセージがありません
-      .group__group-name
-        %p グループ2
-      .group__latest-message
-        %p まだメッセージがありません
+    - current_user.groups.each do |group|
+      .group
+        = link_to '#' do
+          .group__name
+            = group.name
+          .group__message
+            メッセージはまだありません。
+    
