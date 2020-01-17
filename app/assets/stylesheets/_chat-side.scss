@@ -9,13 +9,13 @@
     color: white;
     display: flex;
     align-items: center;
-    &__box {
+    .header__box {
       height: 20px;
       width: 100%;
       font-weight: bold;
       justify-content: space-between;
       display: flex;
-      &__menu {
+      .header__lists {
         display: flex;
         width: 60px;
         li {
@@ -31,21 +31,28 @@
   .groups {
     background-color: #2f3e51;
     height: calc(100vh - 100px);
-    padding: 0 20px;
+    padding: 20px 20px 0;
+    text-decoration: none;
+    overflow: scroll;
     .group {
       color: #ffffff;
       margin-bottom: 40px;
+      text-decoration: none;
     
       &__name {
         font-size: 15px;
         margin-bottom: 5px;
         color: white;
+        text-decoration: none;
       }
       &__message {
         color: white;
         font-size: 11px;
         margin-bottom: 40px;
+        text-decoration: none;
       }
     }
   }
 }
+
+

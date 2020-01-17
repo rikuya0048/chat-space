@@ -3,14 +3,17 @@
     .main-header__left-box
       .main-header__leftbox__current-group
         グループ
-      .main-header__leftbox__member-list
-        大柴
+      %ul.main-header__leftbox__member-list
+        Member:
+        %li.main-header__leftbox__member-list__member
+          あ
     = link_to "#", class: "edit-btn" do
       Edit
   .messages
     = render @messages
   .form
     = form_for [@group, @message] do |f|
+      .input-box
       = f.text_field :content, class: 'form__message', placeholder: 'type a message'
       .form__mask
         = f.label :image, class: 'form__mask__image' do
