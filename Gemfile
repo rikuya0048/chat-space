@@ -61,3 +61,7 @@ gem 'mini_magick'
 gem 'devise'
 gem 'haml-rails'
 gem 'font-awesome-sass'
+
+group :production do
+  gem 'unicorn', '5.4.1'
+end
